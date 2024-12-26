@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, x, y;
+    printf("a:");
+    scanf("%d", &a);
+    printf("b:");
+    scanf("%d", &b);
+    printf("c:");
+    scanf("%d", &c);
+    printf("x:");
+    scanf("%d", &x);
+    y = a * x * x + b * x + c;
+    printf("For x = %d, the calculated weather parameter y = %d\n", x, y);
+    return 0;
+}

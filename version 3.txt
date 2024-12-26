@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, x, y;
+    FILE *file = fopen("input.txt", "r");
+    fscanf(file, "%d %d %d %d", &a, &b, &c, &x);
+    fclose(file);
+    y = a * x * x + b * x + c;
+    printf("For x = %d, the calculated weather parameter y = %d\n", x, y);
+    return 0;
+}

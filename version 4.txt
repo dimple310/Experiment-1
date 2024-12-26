@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, x, y;
+    FILE *file = fopen("inpu.txt", "r");
+    while (fscanf(file, "%d %d %d %d", &a, &b, &c, &x) != EOF) {
+        y = a * x * x + b * x + c;
+        printf("For x = %d, the calculated weather parameter y = %d\n", x, y);
+    }
+    fclose(file);
+    return 0;
+}
